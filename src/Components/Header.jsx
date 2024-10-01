@@ -10,6 +10,7 @@ export const Header = ({signout,isAuth,userID}) => {
         <NavLink class="hover:underline m-4 md:m-6" to="/" >
             <img referrerpolicy="no-referrer" src='OpenBook_Logo.png' class="size-24" />
         </NavLink>
+        <h1 class="text-5xl font-lora  tracking-wider underline underline-offset-[16px]">OPEN BOOK</h1>
         <nav class="text-4xl gap-6 flex " >
         {isAuth ? 
             <>

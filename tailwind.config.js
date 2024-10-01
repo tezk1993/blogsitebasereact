@@ -7,6 +7,8 @@ module.exports = {
       fontFamily: {
         satoshi: ['Satoshi', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
+        cormorant: ["Cormorant+Garamond", "sans-serif"],
+        lora: ["Lora", "sans-serif"]
       },
       colors: {
         'primary-orange': '#FF5722',
