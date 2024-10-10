@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { addDoc, collection, deleteDoc, doc, getDoc, getDocs, query, where } from 'firebase/firestore';
 import { auth, db, storage} from '../firebase';
 import { useNavigate } from 'react-router-dom';
@@ -7,10 +7,8 @@ import 'react-quill/dist/quill.snow.css';
 import {
   getDownloadURL,
   ref,
-  ref as storageRef,
   uploadBytes,
 } from "firebase/storage";
-import firebase from 'firebase/compat/app';
 import 'firebase/firestore'
 import { serverTimestamp } from 'firebase/firestore';
 import { faPenRuler, faTrash } from '@fortawesome/free-solid-svg-icons';

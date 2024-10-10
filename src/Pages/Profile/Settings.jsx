@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { Link, NavLink, useNavigate, useParams } from 'react-router-dom'
-import { auth, db, storage } from '../../firebase';
+import React, {  useRef, useState } from 'react'
+import {  useNavigate, useParams } from 'react-router-dom'
+import { auth, storage } from '../../firebase';
 import { updateProfile } from 'firebase/auth';
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage'
 

@@ -1,4 +1,4 @@
-import {arrayUnion, collection, doc, getDoc, getDocs, query, setDoc, updateDoc } from 'firebase/firestore';
+import {arrayUnion, collection, doc, getDoc, getDocs, setDoc, updateDoc } from 'firebase/firestore';
 import React, { useEffect, useState } from 'react'
 import { NavLink, useParams } from 'react-router-dom';
 import { auth, db } from '../firebase';
@@ -7,7 +7,7 @@ import { Comment } from '../Components/Comment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleUser, faComment, faThumbsDown, faThumbsUp } from '@fortawesome/free-regular-svg-icons';
 
-export const Post = ({isAuth}) => {
+export const Post = () => {
   
     let { postid } = useParams();
     const [post,setPost] = useState();

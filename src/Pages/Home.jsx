@@ -1,12 +1,11 @@
-import { collection, deleteDoc, doc, getDocs, orderBy, query } from 'firebase/firestore';
+import { collection, getDocs, orderBy, query } from 'firebase/firestore';
 import React, { useEffect, useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import { auth, db } from '../firebase';
+import { db } from '../firebase';
 import { PostPreview } from '../Components/PostPreview';
 import { Pagination } from '../Components/Pagination';
 
 
-export const Home = ({isAuth}) => {
+export const Home = () => {
     const [posts, setPosts] = useState();
     const [currentPosts, setCurrentPosts] = useState();
 

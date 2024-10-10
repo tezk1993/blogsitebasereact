@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Comment = ({name,commentText,created_at,photourl,userid}) => {
+export const Comment = ({name,commentText,created_at,photourl}) => {
 
 
   return (

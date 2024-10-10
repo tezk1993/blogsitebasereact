@@ -1,10 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {arrayUnion, collection, deleteDoc, doc, getDoc, getDocs, query, setDoc, updateDoc } from 'firebase/firestore';
+import {collection, doc, getDocs, setDoc, updateDoc } from 'firebase/firestore';
 import React, { useEffect, useState } from 'react'
-import {Link, NavLink, useParams } from 'react-router-dom';
+import {Link, NavLink } from 'react-router-dom';
 import { auth, db } from '../firebase';
 import { faCircleUser, faComment, faThumbsDown, faThumbsUp } from '@fortawesome/free-regular-svg-icons';
-import { getAuth } from 'firebase/auth';
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons';
 
 export const PostPreview = ({authorName,authorID,authorImage,date,title,subtitle,summary,comments,postImage,id}) => {

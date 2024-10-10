@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { auth,googleProvider, storage } from '../firebase'
-import { signInWithPopup,onAuthStateChanged,signInWithEmailAndPassword,createUserWithEmailAndPassword, updateProfile } from 'firebase/auth'
+import { updateProfile } from 'firebase/auth'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGoogle } from '@fortawesome/free-brands-svg-icons'
