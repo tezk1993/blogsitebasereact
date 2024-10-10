@@ -1,8 +1,8 @@
 import { collection, deleteDoc, doc, getDocs, query, where } from 'firebase/firestore';
 import React, { useEffect, useState } from 'react'
 import { Link, NavLink, useParams } from 'react-router-dom'
-import { auth, db } from '../firebase';
-import { PostPreview } from '../Components/PostPreview';
+import { auth, db } from '../../firebase';
+import { PostPreview } from '../../Components/PostPreview';
 
 export const Profile = () => {
 

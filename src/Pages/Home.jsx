@@ -12,7 +12,7 @@ export const Home = ({isAuth}) => {
 
     const [loading, setLoading] = useState(true);
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage] = useState(5);
+    const [postsPerPage] = useState(2);
 
 
     const getPosts = async () =>{
@@ -64,7 +64,7 @@ export const Home = ({isAuth}) => {
                     subtitle={post.subtitle}
                     summary={post.summary}
                     comments={post.comments.length}
-                    postImage={post.image}
+                    postImage={post.featured_image}
                     id={post.id}
                     />
               </div>
