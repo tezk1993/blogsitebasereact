@@ -11,7 +11,7 @@ export const Home = () => {
 
     const [loading, setLoading] = useState(true);
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage] = useState(2);
+    const [postsPerPage] = useState(5);
 
 
     const getPosts = async () =>{
